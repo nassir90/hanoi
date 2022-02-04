@@ -1,0 +1,25 @@
+Stacksteps:
+        Desegnate A as the source, B as the second free rod and C as the destination
+
+Stacksteps 2 = A->B, A->C, B->C
+Stacksteps 3 = A->B, (desegnate C as free rod and stack)
+
+Note: Consider any swaps involved when desegnatinf B and C
+
+Record whether stacking X involves a switch?
+It may not be necessary to obstruct destination layers.
+
+Stack:
+        If at top level:
+                Move largest on source onto a free rod
+        Else:
+                You can actually swap places each go
+                You actually have to as there will only be one free rod
+        Treat the source as a free rod.
+
+Memory for 1 =
+        Move to C
+Memory for n =
+        Expose upper layer at free rod !!! FREE ROD CHANGES WITH EACH RECURSION
+        Move to C
+        Move from free rod to C
